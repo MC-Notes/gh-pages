@@ -35,5 +35,7 @@ Put comments directly into notebook?
     Would require the user to download the branch again.
  2. Comment like done in https://github.com/MC-Notes/Issue1/pull/1
     This allows for corrections to be done directly by the next commit.
+ 3. Jupyterhub for multiuser edits on the notebook, if it runs through the travis tests.
+    Will be unclear how interactions will be documented to github. Would have to be something like a commit button on the notebook, committing edits to the pull request.
 
 
