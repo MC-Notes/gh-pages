@@ -1,2 +1,2 @@
-The web site is at mc-notes.github.io
+The web site is at https://mc-notes.github.io/
 
