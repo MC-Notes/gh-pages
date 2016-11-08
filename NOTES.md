@@ -42,3 +42,4 @@ Put comments directly into notebook?
 
 1. DOIs: Do we get a DOI per issue (i.e. repo) or per article (i.e. PR)? I suspect the answer is per repo since you get a DOI per release. We need one DOI per paper, not per repo. How should we arrange the journal so we can get a DOI per article?
 2. How to launch the notebook on Azure? SageMathCloud? Other?
+3. How to srtructure PRs to support DOIs for each (branch,repo). Releases can be created on branches, do PRs from forks create a branch on the repo? Taggable?
