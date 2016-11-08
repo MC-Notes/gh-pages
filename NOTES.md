@@ -22,7 +22,7 @@ This allows to create pdf in travis
 
 How to run notebooks on travis?
 Idea:
- 1. Install requirements
+ 1. Install requirements (including languages)
  2. Run notebook all the way through
  3. push comment on pull request, showing failure, if it happens
  4. push comment on pull request, showing success (maybe ok just with travis api)
@@ -38,4 +38,7 @@ Put comments directly into notebook?
  3. Jupyterhub for multiuser edits on the notebook, if it runs through the travis tests.
     Will be unclear how interactions will be documented to github. Would have to be something like a commit button on the notebook, committing edits to the pull request.
 
+# Questions to resolve
 
+1. DOIs: Do we get a DOI per issue (i.e. repo) or per article (i.e. PR)? I suspect the answer is per repo since you get a DOI per release. We need one DOI per paper, not per repo. How should we arrange the journal so we can get a DOI per article?
+2. How to launch the notebook on Azure? SageMathCloud? Other?
