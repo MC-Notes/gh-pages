@@ -41,5 +41,7 @@ Put comments directly into notebook?
 # Questions to resolve
 
 1. DOIs: Do we get a DOI per issue (i.e. repo) or per article (i.e. PR)? I suspect the answer is per repo since you get a DOI per release. We need one DOI per paper, not per repo. How should we arrange the journal so we can get a DOI per article?
+ - It seems with the api https://zenodo.org/dev you can actually upload so called depositions yourself. 
+ - It can be automized through travis as well, uploading and publishing when the pull request is accepted.
 2. How to launch the notebook on Azure? SageMathCloud? Other?
-3. How to srtructure PRs to support DOIs for each (branch,repo). Releases can be created on branches, do PRs from forks create a branch on the repo? Taggable?
+ - https://blogs.technet.microsoft.com/machinelearning/2015/07/24/introducing-jupyter-notebooks-in-azure-ml-studio/  ?
