@@ -26,8 +26,7 @@ Idea:
  2. Run notebook all the way through
    - push comment on pull request, showing failure, if it happens
    - push comment on pull request, showing success (maybe ok just with travis api)
- - That did not work, so for now we just run the notebook. If the notebook does not run through completely without 
-   any user inputs it will fail.
+ 3. If pull is excepted, run the notebook and upload an executed_notebook.ipynb to the folder. This is also to make sure to only run any notebook only once. This notebook will be the notebook with the associated DOI, not the one added by the user!
 
 # Comments & Corrections
 
