@@ -24,18 +24,20 @@ How to run notebooks on travis?
 Idea:
  1. Install requirements (including languages)
  2. Run notebook all the way through
- 3. push comment on pull request, showing failure, if it happens
- 4. push comment on pull request, showing success (maybe ok just with travis api)
+   - push comment on pull request, showing failure, if it happens
+   - push comment on pull request, showing success (maybe ok just with travis api)
+ - That did not work, so for now we just run the notebook. If the notebook does not run through completely without 
+   any user inputs it will fail.
 
 # Comments & Corrections
 
 Put comments directly into notebook? 
- 1. Have commenting/suggestion mode on notebook
+ - Comment like done in https://github.com/MC-Notes/Issue1/pull/1
+    This allows for corrections to be done directly by the next commit.
+ - Have commenting/suggestion mode on notebook
     This would be a commit by the reviwers, changing the notebook.
     Would require the user to download the branch again.
- 2. Comment like done in https://github.com/MC-Notes/Issue1/pull/1
-    This allows for corrections to be done directly by the next commit.
- 3. Jupyterhub for multiuser edits on the notebook, if it runs through the travis tests.
+ - Jupyterhub for multiuser edits on the notebook, if it runs through the travis tests.
     Will be unclear how interactions will be documented to github. Would have to be something like a commit button on the notebook, committing edits to the pull request.
 
 # Questions to resolve
