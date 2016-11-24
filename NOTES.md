@@ -1,3 +1,18 @@
+# Comment on Github
+How does api work to put a comment on pull request from executing the notebook:
+ - Files missing?
+ - Execution output from running the notebook.
+ - problems with metadata?
+ - on pull request try to upload to zenodo sandbox, fail if not working (see metadata problems).
+ - on accept upload to zenodo directly using exactly the same routine as in zenodo sandbox above.
+ 
+# Zenodo publish using API
+using python requests to upload to zenodo using given metadata.
+
+# run travis script
+- Find out how to get python errors and report them to github
+
+
 # References
  - Use Calysto:
    * document-tools
