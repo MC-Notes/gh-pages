@@ -19,9 +19,9 @@ body_class: home-intro
         Current open issues for submissions:
     </div>
     {% for repository in site.github.public_repositories %}
-        {% if repository.name != mc-notes.github.io %}
+        {% if repository.name != 'mc-notes.github.io' %}
             <nav class="intro-actions">
-                <a href="{{ repository.html_url }}#fork-destination-box" class="button button-ghost" role="button">to {{ repository.name }}</a>
+                <a href="{{ repository.html_url }}#fork-destination-box" class="button button-ghost" role="button">{{ repository.name }}</a>
             </nav>
         {% endif %}
     {% endfor %}
