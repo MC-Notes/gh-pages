@@ -1,4 +1,9 @@
-## How to submit
+---
+layout: page
+title: How to submit
+subtitle: Submit a new Notebook
+---
+
 Submissions are [pull requests](https://help.github.com/articles/about-pull-requests/) from a [fork](https://guides.github.com/activities/forking/) to the master branch of the selected issue. The review process will be completely open to follow and interaction with the author is greatly appreciated. The work included in notebooks does not need to be published otherwise. This is meant to be a publication platform for usefull scripts for fellow researchers to use in their workflow.
 
 The structure of the notebook should include:
