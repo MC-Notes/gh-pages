@@ -8,14 +8,22 @@ body_class: home-intro
 
   <div class="intro-in">
 
-    <h1 class="intro-title">{{ title }}</h1>
-    <h2 class="intro-subtitle">Simple Notebook Publications</h2>
+    <h1 class="intro-title">MC-Notes</h1>
+    <h2 class="intro-subtitle">{{ site.title }}</h2>
 
-    <nav class="intro-actions">
-      {% for repository in site.github.public_repositories %}
-    <a href="{{ repository.html_url }}#fork-destination-box" class="button-ghost" role="button">Submit to {{ repository.name }}</a>
+    <div class="intro-desc">
+        <p>Simple Notebook Publishing</p>
+        <p>{{ site.description }}</p>
+    </div>
+    <div class="intro-desc">
+        Current open issues for submissions:
+    </div>
+    {% for repository in site.github.public_repositories %}
+        {% if repository.name != mc-notes.github.io %}
+            <nav class="intro-actions">
+                <a href="{{ repository.html_url }}#fork-destination-box" class="button button-ghost" role="button">to {{ repository.name }}</a>
+            </nav>
+        {% endif %}
     {% endfor %}
-    </nav>
   </div>
-
 </section>
