@@ -117,7 +117,7 @@
   @include transition(visibility 0s $animation-duration);
 
   
-  @include media($min-tablet-large) {
+  @include media($min-tablet) {
     left: 80%;
     width: 20%;
     text-align: left;
@@ -137,7 +137,7 @@
     @include transition(transform $animation-duration);
     @include transition-timing-function(cubic-bezier(.86,.01,.77,.78));
 
-    @include media($min-tablet-large) {
+    @include media($min-tablet) {
       @include transform(translateX(+50%));
       @include transition(transform $animation-duration);
       @include transition-timing-function(cubic-bezier(.86,.01,.77,.78));
