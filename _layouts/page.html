@@ -4,16 +4,18 @@ layout: default
 
 <article class="post">
 
-  <header class="post-header intro">
-    <div class="intro-in">
-      <h1 class="post-title">{{ page.title }}</h1>
-      {% if page.subtitle %}
-        <h2 class="intro-subtitle">{{ page.subtitle }}</h2>
-      {% endif %}
+  <div class='intro'>
+    <div class="intro intro-in wrap">
+      <!-- <div class="intro-in wrap"> -->
+        <h1 class="intro-title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+          <h2 class="intro-subtitle">{{ page.subtitle }}</h2>
+        {% endif %}
+      <!-- </div> -->
     </div>
-  </header>
-
-  <div class="post-content container">
+  </div>
+  
+  <div class="post-content wrap">
     {{ content }}
   </div>
 

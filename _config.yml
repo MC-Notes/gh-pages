@@ -17,10 +17,12 @@ title: Monthly Correspondenz Notes
 email: <insertnamehere>@mail.com
 description: > # this means to ignore newlines until "baseurl:"
   A new way of publishing your notebooks with full open reviews.
-  We provide a new way of review and submission process.
-  You submit your notebook as pull request with the right format (defined
-  for each programming language individually).
+  Notebook submissions as pull requests will be reviewed by the community and 
+  assigned reviewers openly and fairly. Each programming language defines
+  its own format and requirements for submissions.
+
   The notebook will be reviewed openly accessible for everyone.
+
   Each notebook will have one reviewer assigned, but everyone can chime
   in and comment or suggest edits.
 baseurl: "" # the subpath of your site, e.g. /blog
