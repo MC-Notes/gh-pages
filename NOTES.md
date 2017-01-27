@@ -61,3 +61,8 @@ Put comments directly into notebook?
  - It can be automized through travis as well, uploading and publishing when the pull request is accepted.
 2. How to launch the notebook on Azure? SageMathCloud? Other?
  - https://blogs.technet.microsoft.com/machinelearning/2015/07/24/introducing-jupyter-notebooks-in-azure-ml-studio/  ?
+ 
+ # Acceptance
+ 1. Have issue raised after pull request with comments etc. 
+ 2. Issue closed means accepted note.
+ 3. Write email to mike for adding in neil.
