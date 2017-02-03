@@ -18,7 +18,7 @@ body_class: home-intro
         {% for repository in site.github.public_repositories %}
             {% if repository.name != 'mc-notes.github.io' %}
                 <div class="button-table">
-                    <a href="{{ repository.html_url }}" class="button button-ghost" role="button">{{ repository.name }}</a>
+                    <a href="{{ repository.url }}" class="button button-ghost" role="button">{{ repository.name }}</a>
                 </div>
             {% endif %}
         {% endfor %}
