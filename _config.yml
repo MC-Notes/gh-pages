@@ -13,18 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Monthly Correspondenz Notes
+title: "Monthly Correspondence: Notes"
 email: <insertnamehere>@mail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A new way of publishing your notebooks with full open reviews.
-  Notebook submissions as pull requests will be reviewed by the community and 
-  assigned reviewers openly and fairly. Each programming language defines
-  its own format and requirements for submissions.
+  Monthly Correspondence is a web journal for publishing Jupyter notebooks with full open reviews. 
+  The entire processes of submission and review is handled by github. A submission is initially made via a pull request. 
+  Then reviewing is interactive and handled by commenting on the resulting pull request. 
 
-  The notebook will be reviewed openly accessible for everyone.
-
-  Each notebook will have one reviewer assigned, but everyone can chime
-  in and comment or suggest edits.
+  The notebook review process will therefore be open and any github user will be able to comment. 
+  
+  Each notebook will have an initial editor assigned, but anyone can chime
+  in and comment or suggest edits. Acceptance of the submission occurs when the pull request is accepted.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
