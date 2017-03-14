@@ -1,0 +1,145 @@
+/* Globals */
+
+nav {
+	/* float: left;
+	display: block; */
+	position: fixed; /* Set the navbar to fixed position */
+ 	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%; /* Full width */
+  	text-align: center;
+  	overflow: hidden;
+	/*border-bottom: 1px solid #ccc;*/
+  	/* max-height: 40px; */
+}
+
+#navigation li a, ul.menu-icon li{	
+	font-family: 'Raleway';
+	font-size: 150%;
+}
+
+ul.menu-icon {
+	z-index: 1000;
+    box-shadow: 0px 0px 10px #eee;
+}
+
+nav i {
+	display: block;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+    background-color: $link-background-color-active;
+    color: white;
+    box-shadow: inner;
+}
+
+nav a:hover, ul.menu-icon:hover, label.toggle input:checked ~ ul.menu-icon {
+  background-color: $link-hover-color;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #0787c6;
+}
+
+/* Menu icon for navigation */
+
+input#view {
+	display: none;
+}
+
+label.toggle input:checked ~ ul.navigation {
+	max-height: 250px;
+}
+
+ul.menu-icon {
+	background-color: #0787c6;
+	display: none;
+	width: 100%;
+	color: white;
+	cursor: pointer;
+}
+
+ul.menu-icon .icon {
+	-moz-transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+ul.menu-icon li {
+	float: left;
+	padding: 14px 16px;
+}
+
+nav i {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/*
+ul.menu-icon li.icon span {
+	position: absolute;
+}
+*/
+
+ul.menu-icon li.icon span.cross {
+	display: none;
+}
+
+label.toggle input:checked ~ ul.menu-icon li.icon span.burger {
+	display: none;
+}
+
+label.toggle input:checked ~ ul.menu-icon li.icon span.cross {
+	display: block;
+}
+
+label.toggle input:checked ~ ul.menu-icon li.icon {
+	/* Firefox */
+	moz-transform: rotate(90deg);
+	/* WebKit */
+	webkit-transform: rotate(90deg);
+	/* Opera */
+	-o-transform: rotate(90deg);
+	/* Standard */
+	transform: rotate(90deg);
+}
+
+/* Navigation horizontal and dropdown */
+
+ul.navigation li {
+	float: left;
+}
+
+ul.navigation li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+ul.navigation {
+	-ms-transition: max-height .3s ease-in;
+	-webkit-transition: max-height .3s ease-in;
+	transition: max-height .3s ease-in;
+}
+
+
+/* media */
+@media screen and (max-width: 600px) {
+	ul.navigation {
+	  max-height: 0px;
+	}
+
+	ul.menu-icon {
+		display: block;
+	}
+
+	ul.navigation li{
+		float: none;
+	}
+}

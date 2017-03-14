@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Raleway:300');
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Global defs */
+
+.floatright {
+	float: right !important;
+}
+
+/* Navigation margin */
+main {
+	margin-top: 57px;
+}
+
+
+/*Markdown Globals */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Raleway', sans-serif;
+	background-color: $title-background-color;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 250%;
+	margin-top: 20px;
+	padding: 20px 20px 10px 20px;
+	border-bottom: 1px solid #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+}
+/*h1:after
+{
+    content:' ';
+    display:block;
+    border: .5px solid #eeeeee;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+*/
+h2 {
+	font-weight: 300;
+	font-size: 200%;
+    padding: 10px 5px 5px 20px;
+    box-shadow: inset 0px 2px 3px #ccc;
+}
+
+h3 {
+	font-weight: 200;
+	font-size: 180%;
+    padding: 5px 5px 5px 20px;
+    box-shadow: inset 0px 2px 3px #ccc;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 180%;
+    padding: 0px 5px 5px 20px;
+}
+
+article p {
+	padding: 0 20px 0 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+article ul {
+    list-style-type: disc;
+    padding-left: 50px;
+    padding-right: 20px;
+	margin-top: 20px;
+}
+
+article ul li {
+    margin-bottom: 4px;
+}
+
+article ul li p {
+	padding: 0;
+	margin-top: 0;
+}
+
+article {
+	padding-bottom: 300px;
+	background-color: $article-background-color;
+	box-shadow: inset 0px 0px 10px 0px #ccc;
+}
+
+article strong {
+	font-weight: bold;
+}
+
+body {
+	background-color: $body-background-color;
+}

@@ -4,4 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is a website for publishing reviewed notebooks. The goal of this project is to promote ease-of-use in research code and reuseability. We provide a new way of review and submission process. You submit your notebook as pull request with the right format (defined for each programming language individually). The notebook will be reviewed openly accessible for everyone. Each notebook will have one reviewer assigned, but everyone can chime in and comment or suggest edits.
+Monthly Correspondence is a web journal for publishing Jupyter notebooks with full open reviews. 
+The entire processes of submission and review is handled by github. A submission is initially made via a pull request. 
+Then reviewing is interactive and handled by commenting on the resulting pull request. 
+
+The notebook review process will therefore be open and any github user will be able to comment. 
+
+Each notebook will have an initial editor assigned, but anyone can chime
+in and comment or suggest edits. Acceptance of the submission occurs when the pull request is accepted.
