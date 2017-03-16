@@ -5,11 +5,25 @@ nav {
 	display: block; */
 	position: fixed; /* Set the navbar to fixed position */
  	top: 0; /* Position the navbar at the top of the page */
-  	width: 100%; /* Full width */
+  	left: auto;
+  	//right: auto;
+  	max-width: $wrap-width; /* Full width */
+  	width: 100%;
   	text-align: center;
   	overflow: hidden;
+  	//z-index: 8888;
 	/*border-bottom: 1px solid #ccc;*/
   	/* max-height: 40px; */
+
+    box-shadow: 0 3px 5px 0 #2d2d2d;
+
+}
+
+
+
+#navigation {
+	// position: relative;
+	// box-shadow: 0px 0px 50px #000;
 }
 
 #navigation li a, ul.menu-icon li{	
@@ -30,11 +44,12 @@ nav i {
 nav a.active {
     background-color: $link-background-color-active;
     color: white;
-    box-shadow: inner;
+    //box-shadow: inset 0 0 5px 0px $link-shadow-color-active;
 }
 
 nav a:hover, ul.menu-icon:hover, label.toggle input:checked ~ ul.menu-icon {
   background-color: $link-hover-color;
+  //box-shadow: inset 0 0 50px 0px $link-shadow-color-active;
 }
 
 nav ul {
@@ -98,13 +113,9 @@ label.toggle input:checked ~ ul.menu-icon li.icon span.cross {
 }
 
 label.toggle input:checked ~ ul.menu-icon li.icon {
-	/* Firefox */
 	-moz-transform: rotate(90deg);
-	/* WebKit */
 	-webkit-transform: rotate(90deg);
-	/* Opera */
 	-o-transform: rotate(90deg);
-	/* Standard */
 	transform: rotate(90deg);
 }
 

@@ -6,16 +6,14 @@ layout: compress
 
   {% include head.html %}
 
-  <body{% if page.body_class %} class="{{ page.body_class }}{% endif %}">
-
+  <!-- <body{% if page.body_class %} class="{{ page.body_class }}{% endif %}"> -->
+    <div class="wrap">
+    {% include header.html %}
     <main>
-      {% include header.html %}
-      <div class="wrap">
-      	{{ content }}
-      </div>
-      {% include footer.html %}
+    	{{ content }}
     </main>
-
+    {% include footer.html %}
+    </div>
     {% include scripts.html %}
-  </body>
+  <!-- </body> -->
 </html><!-- by nandomoreira.me -->

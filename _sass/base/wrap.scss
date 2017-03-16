@@ -1,10 +1,9 @@
 .wrap {
 	max-width: $wrap-width;
-	margin: auto;
-	/*
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    /*
     position:relative;
     padding-left: 2px;
     padding-right: 2px;
