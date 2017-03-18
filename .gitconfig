@@ -1,0 +1,3 @@
+
+[alias]
+    push_gh = subtree push --prefix _site origin master
