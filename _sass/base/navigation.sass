@@ -1,0 +1,102 @@
+/* Globals */
+
+#nav-positioning 
+  position: fixed /* Set the navbar to fixed position */
+  top: 0 /* Position the navbar at the top of the page */
+  left: auto
+  max-width: $tablet-width /* Full width */
+  width: 100%
+  text-align: center
+  overflow: hidden
+  box-shadow: 0 3px 5px 0 #2d2d2d
+  font-size: 150%
+
+
+  /* Global settings: */
+  a
+    font-family: 'Raleway'
+    
+  a.active
+    background-color: $link-background-color-active
+    color: white
+
+  a:hover, .menu-icon:hover, 
+    background-color: $link-hover-color
+
+  
+  /* Label and toggle settings */
+
+  i 
+    display: block
+
+  input#view // Hide input checkbox forever
+    display: none
+
+  label.toggle input:checked ~ nav.navbar
+    max-height: 250px // Make menu animatable
+
+  .menu-icon
+    display: none
+    width: 100%
+    background-color: $navigation-background-color
+    color: white
+    cursor: pointer
+    list-style-type: none
+
+  .menu-icon span
+    font-family: 'Raleway'
+    float: left
+    text-align: center
+    padding: 14px 16px
+
+  .menu-icon .icon
+    transition: all .3s ease-in // Transition for rotation
+    float: right
+
+  .menu-icon .icon .burger
+    margin-top: -4px
+
+  .menu-icon span.cross
+    display: none
+
+  label.toggle input:checked ~ .menu-icon .icon 
+    transform: rotate(90deg) // Rotation for toggle
+
+  label.toggle input:checked ~ .menu-icon span.burger
+    display: none
+
+  label.toggle input:checked ~ .menu-icon span.cross 
+    display: block
+
+
+
+  /* Navigation horizontal and dropdown */
+
+  label nav 
+    overflow: hidden
+    background-color: $navigation-background-color
+    transition: max-height .3s ease-in
+
+  label nav.navbar a 
+    display: block
+    float: left
+    text-decoration: none
+    color: white
+    text-align: center
+    padding: 14px 16px
+
+    &:last-child
+      float: right
+
+/* media */
+@media screen and (max-width: $phone-width)
+  #nav-positioning label nav
+    max-height: 0px
+
+  #nav-positioning label nav.navbar a
+    float: none  
+    &:last-child
+      float: none  
+
+  #nav-positioning .menu-icon 
+    display: table

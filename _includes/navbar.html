@@ -8,27 +8,23 @@
 </a>
 -->
 
+<div id="nav-positioning">
+	<label class="toggle">
+		<input id="view" type="checkbox" />
+		<div class="menu-icon">
+			<span>Menu</span>
+			<div class="icon">
+				<span class="burger">&#9776;</span>
+				<span class="cross">✕</span>
+			</div>
+		</div>
 
-	<!-- <div class='wrap'> -->
-<nav id="navbar", class="navbar">
-	<!-- <div class="wrap"> -->
-		<label class="toggle" onclick=""  style="width:100px">
-			<input id="view" type="checkbox" />
-			<ul class="menu-icon">
-				<li>Menu</li>
-				<li class="icon floatright">
-					<span class="burger">☰</span>
-					<span class="cross">✕</span>
-				</li>
-			</ul>
+		<nav class="navbar">
+			<a href="{{ '/' | prepend: site.baseurl }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+			<a href="{{ '/howto/' | prepend: site.baseurl }}" {% if page.url == '/howto/' %}class="active"{% endif %}>How To Submit</a></li>
+			<a href="{{ '/about/' | prepend: site.baseurl }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
+			<a href="https://github.com/MC-Notes" target="_blank"><i class="icon-github"></i>Github</a></li>
+		</nav>
 
-		  <ul class="navigation" id="navigation">
-			  <li><a href="{{ '/' | prepend: site.baseurl }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-			  <li><a href="{{ '/howto/' | prepend: site.baseurl }}" {% if page.url == '/howto/' %}class="active"{% endif %}>How To Submit</a></li>
-			  <li><a href="{{ '/about/' | prepend: site.baseurl }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
-			  <li><a href="https://github.com/MC-Notes" target="_blank"><i class="icon-github"></i>Github</a></li>
-		  </ul>
-		</label>
-	<!-- </div> -->
-	<!-- </div> -->
-</nav>
+	</label>
+</div>
