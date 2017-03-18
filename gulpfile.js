@@ -83,3 +83,7 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
+
+gulp.task('deploy', function (done) {
+  return cp.spawn( 'git', ['subtree', 'push', '--prefix', '_site/' ,'origin', 'master'], {stdio: 'inherit'}).on('close', done);
+});
