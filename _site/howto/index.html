@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>How to submit a new notebook</title>
+  <meta name="description" content="Monthly Correspondence is a web journal for publishing Jupyter notebooks with full open reviews.  The entire processes of submission and review is handled by github. A submission is initially made via a pull request.  Then reviewing is interactive and handled by commenting on the resulting pull request. 
+The notebook review process will therefore be open and any github user will be able to comment. 
+Each notebook will have an initial editor assigned, but anyone can chime in and comment or suggest edits. Acceptance of the submission occurs when the pull request is accepted.
+">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4002/howto/">
+  <link rel="alternate" type="application/rss+xml" title="Monthly Correspondence: Notes" href="http://localhost:4002/feed.xml">
+
+  <script src="/assets/js/modernizr.js"></script>
+</head>
+
+  <body>
+    <div class="wrap">
+    <header class="site-header">
+  <!--
+<a href="#navbar" id="menu-burger" class="menu-burger">Menu
+  <span class="nav-icon"></span>
+
+  <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+    <circle fill="transparent" stroke="#000000" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+  </svg>
+</a>
+-->
+
+<div id="nav-positioning">
+	<label class="toggle">
+		<input id="view" type="checkbox" />
+		<div class="menu-icon">
+			<span>Menu</span>
+			<div class="icon">
+				<span class="burger">&#9776;</span>
+				<span class="cross">✕</span>
+			</div>
+		</div>
+
+		<nav class="navbar">
+			<a href="/" >Home</a></li>
+			<a href="/howto/" class="active">How To Submit</a></li>
+			<a href="/about/" >About</a></li>
+			<a href="https://github.com/MC-Notes" target="_blank"><i class="icon-github"></i>Github</a></li>
+		</nav>
+
+	</label>
+</div>
+</header>
+
+    <main>
+    	<article>
+
+<h1>How to submit a new notebook</h1>
+
+
+<p>Submissions are <a href="https://help.github.com/articles/about-pull-requests/">pull requests</a> from a <a href="https://guides.github.com/activities/forking/">fork</a> to the master branch of the selected issue. The review process will be completely open to follow and interaction with the author is greatly appreciated. The work included in notebooks does not need to be published otherwise. This is meant to be a publication platform for usefull scripts for fellow researchers to use in their workflow.</p>
+
+<p>The structure of the notebook should include:</p>
+
+<ul>
+<li>Name of the notebook.</li>
+<li>Author names, contact and short summary (abstract).</li>
+<li>Cell description and cells to run the code. </li>
+<li>Conclusion &amp; <a href="#References">References</a></li>
+</ul>
+
+<h1>Files to include</h1>
+
+<ul>
+<li><code>\&lt;notebook_name\&gt;.ipynb</code>:
+Jupyter notebook runnable in python 3. 
+The notebook has to run through without any user input. 
+Make sure the notebook runs by itself all the way through without user interaction, as otherwise the submission will not be accepted.
+<strong>The filename <code>executed_notebook.ipynb</code> is reserved and cannot be used as a file name!</strong></li>
+<li><code>requirements.txt</code>:
+One line per required package for installation. Packages must be provided on pip and installable by pip install &lt;packagname&gt;.</li>
+<li><code>metadata.yml</code>:
+Yaml file containing the metadata for your publication. This file will be used to add a DOI to your notebook for citation. An example file is shown below. Optional entries are marked as optional.</li>
+</ul>
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml">  <span class="s">title</span><span class="pi">:</span> <span class="s">Title of Notebook</span>
+  <span class="s">creators</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+    <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+    <span class="s">...</span>
+  <span class="s">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Short</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">(abstract)</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">notebook."</span>
+  <span class="s">keywords</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">keyword1'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">keyword2'</span><span class="pi">,</span> <span class="nv">...</span> <span class="pi">]</span> <span class="c1"># Optional</span>
+  <span class="s">contributors</span><span class="pi">:</span> <span class="c1"># Optional</span>
+    <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">type'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">DataCollector'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+    <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">type'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">ContactPerson'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+  <span class="s">grants</span><span class="pi">:</span> <span class="c1"># Optional</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">id':'FP7 grant id'</span>
+</code></pre></div>
+<p>Have a look at <a href="http://developers.zenodo.org/#restapi-rep-meta">zenodo rest api</a> for a detailed description of the metadata file and options.</p>
+
+<p><em>No other files are allowed, accompanying scripts should be included into the notebook at the appropriate position.</em></p>
+
+<h1>References</h1>
+
+<p>We recommend using calysto document tools from the calysto notebook extensions https://github.com/Calysto/notebook-extensions, which allows you to reference bibtex style and include the bibliography directly into the notebook. </p>
+
+
+</article>
+
+    </main>
+    <footer class="site-footer">
+  <!-- <div class="wrap"> -->
+    <!-- <ul class="social">
+  <li><a href="https://github.com/MC-Notes" target="_blank"><i class="icon icon-github"></i></a></li>
+</ul> -->
+    <p>
+      <small>&copy;2017 All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and ♥</small>
+    </p>
+  <!-- </div> -->
+</footer>
+
+    </div>
+    <!--
+<script src="/assets/js/jquery-2.1.1.js"></script>
+<script src="/assets/js/main.js"></script>
+-->
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+  </body>
+</html><!-- by nandomoreira.me -->

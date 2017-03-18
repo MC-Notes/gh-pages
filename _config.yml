@@ -23,10 +23,14 @@ repository: MC-Notes/mc-notes.github.io
 permalink: /:year/:month/:day/:title/
 
 # Build settings
-markdown: kramdown
-
 gems:
 - jekyll-autoprefixer
+- jekyll-pandoc
+- pandoc-ruby
+- github-pages
+- git
+
+markdown: redcarpet #kramdown
 
 exclude:
   - Gemfile
@@ -36,3 +40,9 @@ exclude:
   - "package.json"
   - cacert.pem
   - serve
+  - README.md
+  # - NOTES.md
+
+# Package settings:
+autoprefixer:
+  browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7']

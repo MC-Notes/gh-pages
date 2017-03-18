@@ -7,7 +7,9 @@ gem 'jekyll'
 gem 'jekyll-assets'   
 gem 'jekyll-scholar' 
 gem 'jekyll-pandoc' 
-gem 'pandoc-ruby'   
+gem 'jekyll-autoprefixer'
+
+gem 'pandoc-ruby'
 gem 'psych'         
 gem 'json'          
 

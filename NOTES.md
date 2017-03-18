@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Comment on Github
 How does api work to put a comment on pull request from executing the notebook:
  - Files missing?
