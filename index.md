@@ -1,8 +1,9 @@
 ---
 layout: page
 title: MC-Notes
-subtitle: "Monthly Correspondence: Notes"
 ---
+
+## Monatliche Correspondenz: Notes
 
 Despite significant advances in our communication technology, academic
 publication retains a model that is over two hundred years old. *Monatliche
@@ -42,7 +43,7 @@ issues tracker.
 
 See [How To Submit]({{ '/howto' | prepend: site.baseurl }}) of how to submit to our journal.
 
-<h3>Current open issues for submissions:</h3>
+## Volumes ##
 {% for repository in site.github.public_repositories %}
     {% if repository.name != 'mc-notes.github.io' and repository.has_pages %}
 <div class="button-table">

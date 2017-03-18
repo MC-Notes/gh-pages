@@ -25,6 +25,14 @@ permalink: /:year/:month/:day/:title/
 # Build settings
 markdown: kramdown
 
+gems:
+- jekyll-autoprefixer
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - "node_modules"
+  - "gulpfile.js"
+  - "package.json"
+  - cacert.pem
+  - serve

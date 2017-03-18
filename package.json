@@ -1,0 +1,31 @@
+{
+  "name": "mc-notes",
+  "version": "0.0.1",
+  "description": "mc-notes, easy notebook publishing with open peer review",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Zwiessele",
+  "license": "https://opensource.org/licenses/BSD-3-Clause",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": ">1.0.0",
+    "gulp-sass": ">2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MC-Notes/mc-notes.github.io"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "bugs": {
+    "url": "https://github.com/MC-Notes/mc-notes.github.io/issues"
+  },
+  "homepage": "http://mc-notes.github.io/"
+}
