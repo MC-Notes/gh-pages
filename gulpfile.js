@@ -39,7 +39,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
             //directory: true
         },
         // injectChanges: false, // Try to just reload the browser
-        browser: ["google chrome", "safari"]
+        // browser: ["google chrome", "safari"]
     });
 });
 
