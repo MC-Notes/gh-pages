@@ -13,15 +13,20 @@ Each notebook will have an initial editor assigned, but anyone can chime in and 
 ">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="http://localhost:4002/NOTES/">
-  <link rel="alternate" type="application/rss+xml" title="Monthly Correspondence: Notes" href="http://localhost:4002/feed.xml">
+  <link rel="canonical" href="/NOTES/">
+  <link rel="alternate" type="application/rss+xml" title="Monthly Correspondence: Notes" href="/feed.xml">
 
-  <script src="/assets/js/modernizr.js"></script>
+  <!-- <script src="/assets/js/modernizr.js"></script> -->
 </head>
 
+
   <body>
+
     <div class="wrap">
-    <header class="site-header">
+
+      <div class="main-positioning">
+        
+        <header class="site-header">
   <!--
 <a href="#navbar" id="menu-burger" class="menu-burger">Menu
   <span class="nav-icon"></span>
@@ -45,7 +50,7 @@ Each notebook will have an initial editor assigned, but anyone can chime in and 
 
 		<nav class="navbar">
 			<a href="/" >Home</a></li>
-			<a href="/howto/" >How To Submit</a></li>
+			<a href="/howto/" >Submit</a></li>
 			<a href="/about/" >About</a></li>
 			<a href="https://github.com/MC-Notes" target="_blank"><i class="icon-github"></i>Github</a></li>
 		</nav>
@@ -54,13 +59,19 @@ Each notebook will have an initial editor assigned, but anyone can chime in and 
 </div>
 </header>
 
-    <main>
-    	<article>
 
-<h1>Testing</h1>
+        <main class="content">
+        	<div class="main-title-container">
+  <h1 class="main-title">MC:Notes</h1>
 
+  
+    <h2 class="main-subtitle">Testing</h2>
+  
+</div>
 
-<h1>Comment on Github</h1>
+<article>
+
+  <h1>Comment on Github</h1>
 
 <p>How does api work to put a comment on pull request from executing the notebook:
  - Files missing?
@@ -152,8 +163,8 @@ Idea:
 
 </article>
 
-    </main>
-    <footer class="site-footer">
+          
+          <footer class="site-footer">
   <!-- <div class="wrap"> -->
     <!-- <ul class="social">
   <li><a href="https://github.com/MC-Notes" target="_blank"><i class="icon icon-github"></i></a></li>
@@ -164,7 +175,12 @@ Idea:
   <!-- </div> -->
 </footer>
 
+        </main>
+
+      </div>
+
     </div>
+
     <!--
 <script src="/assets/js/jquery-2.1.1.js"></script>
 <script src="/assets/js/main.js"></script>
@@ -172,5 +188,7 @@ Idea:
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
   </body>
+
 </html><!-- by nandomoreira.me -->

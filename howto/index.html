@@ -6,22 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>How to submit a new notebook</title>
+  <title>Submit a Note!</title>
   <meta name="description" content="Monthly Correspondence is a web journal for publishing Jupyter notebooks with full open reviews.  The entire processes of submission and review is handled by github. A submission is initially made via a pull request.  Then reviewing is interactive and handled by commenting on the resulting pull request. 
 The notebook review process will therefore be open and any github user will be able to comment. 
 Each notebook will have an initial editor assigned, but anyone can chime in and comment or suggest edits. Acceptance of the submission occurs when the pull request is accepted.
 ">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="http://localhost:4002/howto/">
-  <link rel="alternate" type="application/rss+xml" title="Monthly Correspondence: Notes" href="http://localhost:4002/feed.xml">
+  <link rel="canonical" href="/howto/">
+  <link rel="alternate" type="application/rss+xml" title="Monthly Correspondence: Notes" href="/feed.xml">
 
-  <script src="/assets/js/modernizr.js"></script>
+  <!-- <script src="/assets/js/modernizr.js"></script> -->
 </head>
 
+
   <body>
+
     <div class="wrap">
-    <header class="site-header">
+
+      <div class="main-positioning">
+        
+        <header class="site-header">
   <!--
 <a href="#navbar" id="menu-burger" class="menu-burger">Menu
   <span class="nav-icon"></span>
@@ -45,7 +50,7 @@ Each notebook will have an initial editor assigned, but anyone can chime in and 
 
 		<nav class="navbar">
 			<a href="/" >Home</a></li>
-			<a href="/howto/" class="active">How To Submit</a></li>
+			<a href="/howto/" class="active">Submit</a></li>
 			<a href="/about/" >About</a></li>
 			<a href="https://github.com/MC-Notes" target="_blank"><i class="icon-github"></i>Github</a></li>
 		</nav>
@@ -54,11 +59,17 @@ Each notebook will have an initial editor assigned, but anyone can chime in and 
 </div>
 </header>
 
-    <main>
-    	<article>
 
-<h1>How to submit a new notebook</h1>
+        <main class="content">
+        	<div class="main-title-container">
+  <h1 class="main-title">MC:Notes</h1>
 
+  <a href="true" class="main-cta">
+    <h2 class="main-subtitle">Submit a Note!</h2>
+  </a>
+</div>
+
+<section>
 
 <p>Submissions are <a href="https://help.github.com/articles/about-pull-requests/">pull requests</a> from a <a href="https://guides.github.com/activities/forking/">fork</a> to the master branch of the selected issue. The review process will be completely open to follow and interaction with the author is greatly appreciated. The work included in notebooks does not need to be published otherwise. This is meant to be a publication platform for usefull scripts for fellow researchers to use in their workflow.</p>
 
@@ -95,7 +106,7 @@ Yaml file containing the metadata for your publication. This file will be used t
     <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">type'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">DataCollector'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
     <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">type'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">ContactPerson'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
   <span class="s">grants</span><span class="pi">:</span> <span class="c1"># Optional</span>
-    <span class="pi">-</span> <span class="s1">'</span><span class="s">id':'FP7 grant id'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">id':'&lt;FP7 grant id&gt;'</span>
 </code></pre></div>
 <p>Have a look at <a href="http://developers.zenodo.org/#restapi-rep-meta">zenodo rest api</a> for a detailed description of the metadata file and options.</p>
 
@@ -106,10 +117,10 @@ Yaml file containing the metadata for your publication. This file will be used t
 <p>We recommend using calysto document tools from the calysto notebook extensions https://github.com/Calysto/notebook-extensions, which allows you to reference bibtex style and include the bibliography directly into the notebook. </p>
 
 
-</article>
+<section>
 
-    </main>
-    <footer class="site-footer">
+          
+          <footer class="site-footer">
   <!-- <div class="wrap"> -->
     <!-- <ul class="social">
   <li><a href="https://github.com/MC-Notes" target="_blank"><i class="icon icon-github"></i></a></li>
@@ -120,7 +131,12 @@ Yaml file containing the metadata for your publication. This file will be used t
   <!-- </div> -->
 </footer>
 
+        </main>
+
+      </div>
+
     </div>
+
     <!--
 <script src="/assets/js/jquery-2.1.1.js"></script>
 <script src="/assets/js/main.js"></script>
@@ -128,5 +144,7 @@ Yaml file containing the metadata for your publication. This file will be used t
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
   </body>
+
 </html><!-- by nandomoreira.me -->

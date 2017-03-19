@@ -6,22 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>MC-Notes</title>
+  <title>Monatliche Correspondenz: Notes</title>
   <meta name="description" content="Monthly Correspondence is a web journal for publishing Jupyter notebooks with full open reviews.  The entire processes of submission and review is handled by github. A submission is initially made via a pull request.  Then reviewing is interactive and handled by commenting on the resulting pull request. 
 The notebook review process will therefore be open and any github user will be able to comment. 
 Each notebook will have an initial editor assigned, but anyone can chime in and comment or suggest edits. Acceptance of the submission occurs when the pull request is accepted.
 ">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="http://localhost:4002/">
-  <link rel="alternate" type="application/rss+xml" title="Monthly Correspondence: Notes" href="http://localhost:4002/feed.xml">
+  <link rel="canonical" href="/">
+  <link rel="alternate" type="application/rss+xml" title="Monthly Correspondence: Notes" href="/feed.xml">
 
-  <script src="/assets/js/modernizr.js"></script>
+  <!-- <script src="/assets/js/modernizr.js"></script> -->
 </head>
 
+
   <body>
+
     <div class="wrap">
-    <header class="site-header">
+
+      <div class="main-positioning">
+        
+        <header class="site-header">
   <!--
 <a href="#navbar" id="menu-burger" class="menu-burger">Menu
   <span class="nav-icon"></span>
@@ -45,7 +50,7 @@ Each notebook will have an initial editor assigned, but anyone can chime in and 
 
 		<nav class="navbar">
 			<a href="/" class="active">Home</a></li>
-			<a href="/howto/" >How To Submit</a></li>
+			<a href="/howto/" >Submit</a></li>
 			<a href="/about/" >About</a></li>
 			<a href="https://github.com/MC-Notes" target="_blank"><i class="icon-github"></i>Github</a></li>
 		</nav>
@@ -54,15 +59,19 @@ Each notebook will have an initial editor assigned, but anyone can chime in and 
 </div>
 </header>
 
-    <main>
-    	<article>
 
-<h1>MC-Notes</h1>
+        <main class="content">
+        	<div class="main-title-container">
+  <h1 class="main-title">MC:Notes</h1>
 
+  
+    <h2 class="main-subtitle">Monatliche Correspondenz: Notes</h2>
+  
+</div>
 
-<h2>Monatliche Correspondenz: Notes</h2>
+<article>
 
-<p>Despite significant advances in our communication technology, academic
+  <p>Despite significant advances in our communication technology, academic
 publication retains a model that is over two hundred years old. <em>Monatliche
 Correspondenz</em> was an early journal which assimilated letters from astronomers
 across Europe, and redistributed them in edited form through compiling the
@@ -103,15 +112,15 @@ issues tracker. </p>
 <h2>Volumes</h2>
 
 <div class="button-table">
-<a href="Issue1" class="button button-ghost" role="button">Issue1</a>
+<a href="Volume-I" class="button button-ghost" role="button">Volume-I</a>
 </div>
     
 
 
 </article>
 
-    </main>
-    <footer class="site-footer">
+          
+          <footer class="site-footer">
   <!-- <div class="wrap"> -->
     <!-- <ul class="social">
   <li><a href="https://github.com/MC-Notes" target="_blank"><i class="icon icon-github"></i></a></li>
@@ -122,7 +131,12 @@ issues tracker. </p>
   <!-- </div> -->
 </footer>
 
+        </main>
+
+      </div>
+
     </div>
+
     <!--
 <script src="/assets/js/jquery-2.1.1.js"></script>
 <script src="/assets/js/main.js"></script>
@@ -130,5 +144,7 @@ issues tracker. </p>
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
   </body>
+
 </html><!-- by nandomoreira.me -->
