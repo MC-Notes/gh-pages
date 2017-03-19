@@ -1,17 +1,18 @@
-pre.highlight{
+.highlight{
 	font-family: 'Inconsolata', monospace;
 	background-color: #eee;
 	padding: 10px;
 	border-radius: 0px;
 	overflow: auto;
 	margin-bottom: 10px;
+  //display: block;
 }
 
 code{
 	font-family: 'Inconsolata', monospace;
 	background-color: #eee;
 	padding: 1px 3px;
-	border-radius: 2px;	
+	//border-radius: 2px;	
 }
 
 .hll { background-color: #ffffcc }

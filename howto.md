@@ -1,6 +1,7 @@
 ---
-layout: page
-title: How to submit a new notebook
+layout: flex-sticky
+title: Submit a Note!
+cta: true
 permalink: /howto/
 ---
 
@@ -37,7 +38,7 @@ The structure of the notebook should include:
     - {'name': "last, first", 'type': 'DataCollector', 'affiliation': 'university of ...'}
     - {'name': "last, first", 'type': 'ContactPerson', 'affiliation': 'university of ...'}
   grants: # Optional
-    - 'id':'FP7 grant id'
+    - 'id':'<FP7 grant id>'
   ```
   Have a look at [zenodo rest api](http://developers.zenodo.org/#restapi-rep-meta) for a detailed description of the metadata file and options.
 

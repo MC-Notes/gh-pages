@@ -2,14 +2,27 @@
 <html>
 
   {% include head.html %}
+
   <body>
+
     <div class="wrap">
-    {% include header.html %}
-    <main>
-    	{{ content }}
-    </main>
-    {% include footer.html %}
+
+      <div class="main-positioning">
+        
+        {% include header.html %}
+
+        <main class="content">
+        	{{ content }}
+          
+          {% include footer.html %}
+        </main>
+
+      </div>
+
     </div>
+
     {% include scripts.html %}
+
   </body>
+
 </html><!-- by nandomoreira.me -->

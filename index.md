@@ -1,9 +1,7 @@
 ---
 layout: page
-title: MC-Notes
+title: "Monatliche Correspondenz: Notes"
 ---
-
-## Monatliche Correspondenz: Notes
 
 Despite significant advances in our communication technology, academic
 publication retains a model that is over two hundred years old. *Monatliche

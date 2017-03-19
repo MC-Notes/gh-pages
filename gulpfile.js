@@ -33,7 +33,7 @@ gulp.task('jekyll-build', function (done) {
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     bs.init({
         notify: true,
-        open: false, //"ui",
+        open: true, //"ui",
         server: {
             baseDir: '_site',
             //directory: true
