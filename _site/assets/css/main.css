@@ -3,8 +3,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Open Sans", sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: grayscale; }
 
 /* Global defs */
-.floatright { float: right !important; }
-
 /* Navigation margin */
 main { margin-top: 57px; }
 
@@ -70,13 +68,11 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   #nav-positioning label nav.navbar { width: 150px; }
   #nav-positioning label nav.navbar:before, #nav-positioning label nav.navbar:after { content: ""; display: block; }
   #nav-positioning label nav.navbar a { float: none; flex: 1; }
-  #nav-positioning label nav.navbar a:last-child { flex: 1; float: none; }
-  .main-positioning { display: flex; }
-  .content { margin-left: 150px; flex: 1; }
-  main { margin-top: 0px; } }
-.highlight { font-family: 'Inconsolata', monospace; background-color: #eee; padding: 10px; border-radius: 0px; overflow: auto; margin-bottom: 10px; }
+  #nav-positioning label nav.navbar a:last-child { flex: 1; float: none; } }
+div.highlight { font-family: 'Inconsolata', monospace; background-color: #eee; padding: 10px; border-radius: 0px; overflow: auto; margin-bottom: 10px; width: inherit; }
 
-code { font-family: 'Inconsolata', monospace; background-color: #eee; padding: 1px 3px; }
+div.highlight code { display: block; font-family: 'Inconsolata', monospace; overflow: auto; }
+div.highlight code span { display: inline; }
 
 .hll { background-color: #ffffcc; }
 
@@ -270,3 +266,6 @@ a.main-cta:hover { background: #18aa66; }
 
 @media screen and (max-width: 500px) { h1.main-title { font-size: 4em; text-shadow: 0px 0px 10px white; padding: 10px 0 0px 0px; }
   h2.main-subtitle { font-size: 30px; padding: 5px 0 10px 0px; } }
+@media screen and (min-width: 1024px) { .main-postitioning { display: flex; }
+  .content { margin-left: 150px; flex: 1; }
+  main { margin-top: 0px; } }

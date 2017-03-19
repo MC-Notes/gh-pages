@@ -4,7 +4,9 @@ var reload      = bs.reload
 var stream      = bs.stream
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+var gutil       = require('gulp-util')
 var cp          = require('child_process');
+var plumber     = require('gulp-plumber');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -16,8 +18,9 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     bs.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-        .on('close', done);
+    return cp.spawn( jekyll , ['build', '--incremental'], {stdio: 'inherit'})
+            .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
+            .on('close', done);
 });
 
 // /**
@@ -48,10 +51,12 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  */
 gulp.task('sass', function () {
     return gulp.src('_sass/main.scss')
-        .pipe(sass({
-            includePaths: ['scss'],
-            onError: bs.notify
+        .pipe(plumber((error) => {
+              gutil.log(gutil.colors.red(error.message));
+              bs.notify(error.message);
+              gulp.task('sass').emit('end');
         }))
+        .pipe(sass())
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], 
             { cascade: true }))
         .pipe(gulp.dest('_site/assets/css'))
@@ -63,7 +68,6 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    
     gulp.watch([
         '_sass/*.scss', 
         '_sass/*.sass', 

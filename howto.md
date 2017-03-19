@@ -39,7 +39,10 @@ The structure of the notebook should include:
     - {'name': "last, first", 'type': 'ContactPerson', 'affiliation': 'university of ...'}
   grants: # Optional
     - 'id':'<FP7 grant id>'
+
+  test a very long long long long line to see if it actually hides correctly here and not over there, why is this ? i dont understand as all the styles are the same used everywhere.
   ```
+
   Have a look at [zenodo rest api](http://developers.zenodo.org/#restapi-rep-meta) for a detailed description of the metadata file and options.
 
 *No other files are allowed, accompanying scripts should be included into the notebook at the appropriate position.*

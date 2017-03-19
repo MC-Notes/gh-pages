@@ -29,6 +29,7 @@ gems:
 - pandoc-ruby
 - github-pages
 - git
+- safe_yaml
 
 markdown: redcarpet #kramdown
 

@@ -1,17 +1,42 @@
-.highlight{
-	font-family: 'Inconsolata', monospace;
+div.highlight{
+  font-family: 'Inconsolata', monospace;
 	background-color: #eee;
 	padding: 10px;
 	border-radius: 0px;
 	overflow: auto;
 	margin-bottom: 10px;
-  //display: block;
+  width: inherit;
 }
 
-code{
+div.highlight code{
+  display: block;
+  // flex-direction: row;
+  // flex-wrap: wrap;
 	font-family: 'Inconsolata', monospace;
-	background-color: #eee;
-	padding: 1px 3px;
+  overflow: auto;
+  //word-wrap: break-word;
+  //max-width: 500px;
+  //height: 100%;
+
+  span {
+    display: inline;
+  }
+  // &.language-yaml span  {
+  //   flex: 0;
+  //   text-align: center;
+  // }
+
+  // &.language-yaml span.nv{
+  //   flex: 2;
+  //   width: 100%;
+  //   //background: pink;
+  // }
+
+  // &.language-yaml span.pi{
+  //   flex: 2;
+  //   width: 100%;
+  //   //background: pink;
+  // }
 	//border-radius: 2px;	
 }
 

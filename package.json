@@ -9,10 +9,11 @@
   "author": "Max Zwiessele",
   "license": "https://opensource.org/licenses/BSD-3-Clause",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": ">1.0.0",
-    "gulp-sass": ">2.1.0"
+    "browser-sync": ">=2.18.8",
+    "gulp": ">=3.9.1",
+    "gulp-autoprefixer": ">=1.0.0",
+    "gulp-sass": ">=2.1.0",
+    "gulp-plumber": ">=1.0.1"
   },
   "repository": {
     "type": "git",

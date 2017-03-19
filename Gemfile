@@ -12,6 +12,7 @@ gem 'jekyll-autoprefixer'
 gem 'pandoc-ruby'
 gem 'psych'         
 gem 'json'          
+gem 'safe_yaml'
 
 gem 'octokit'
 gem 'twitter'
